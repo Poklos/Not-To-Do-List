@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct Not_To_Do_ListApp: App {
+    
+    @StateObject var listViewModel: ListViewModel = ListViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ListView()
         }
+        .environmentObject(listViewModel)
     }
 }
