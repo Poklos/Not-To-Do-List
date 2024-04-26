@@ -16,6 +16,7 @@ struct ListView: View {
     @EnvironmentObject var listViewModel: ListViewModel
     @FocusState private var fieldIsFocused: Bool
     
+    
     init() {
            // Ustawienie niestandardowego koloru żółtego dla tekstu paska nawigacyjnego
            UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: customYellowUIColor]
@@ -75,7 +76,7 @@ struct ListView: View {
                     .padding(.horizontal) // Dodanie paddingu poziomego dla przycisku
                     .padding(.bottom)
                 }
-                .navigationTitle("Not to do list")
+                .navigationTitle("Don't do it list")
                 
 
             }
@@ -85,11 +86,11 @@ struct ListView: View {
             .foregroundColor(.white)
             
             .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    HStack {
-                        EditButton()
-                    }
-                }
+//                ToolbarItem(placement: .navigationBarLeading) {
+//                    HStack {
+//                        EditButton()
+//                    }
+//                }
                 
                 ToolbarItem(placement: .navigationBarTrailing) {
                     HStack {

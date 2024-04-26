@@ -68,8 +68,8 @@ class ListViewModel: ObservableObject {
     func initializeDemoItems() {
         if items.isEmpty { // Sprawdza czy lista elementów jest pusta
             let demoItems = [
-                ItemModel(title: "Just type things you don't wanna do today... or in life", isCompleted: false),
-                ItemModel(title: "Then mark it when it's not done ", isCompleted: true)
+                ItemModel(title: "Just type the things you don't want to do today... or ever.", isCompleted: false),
+                ItemModel(title: "Then mark them when they are not done", isCompleted: true)
             ]
             items.append(contentsOf: demoItems)
         }

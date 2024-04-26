@@ -14,6 +14,7 @@
 		F0D1BB162BD12723000BA516 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1BB152BD12723000BA516 /* ListView.swift */; };
 		F0D1BB182BD12742000BA516 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1BB172BD12742000BA516 /* ListRowView.swift */; };
 		F0D1BB1B2BD12895000BA516 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1BB1A2BD12895000BA516 /* ListViewModel.swift */; };
+		F0D1BB222BD99BF3000BA516 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0D1BB212BD99BF3000BA516 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,8 @@
 		F0D1BB152BD12723000BA516 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		F0D1BB172BD12742000BA516 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 		F0D1BB1A2BD12895000BA516 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		F0D1BB1E2BD93AFE000BA516 /* Not-To-Do-List-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Not-To-Do-List-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F0D1BB212BD99BF3000BA516 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +44,7 @@
 		F0D1BAF72BD126B0000BA516 = {
 			isa = PBXGroup;
 			children = (
+				F0D1BB212BD99BF3000BA516 /* Launch Screen.storyboard */,
 				F0D1BB022BD126B0000BA516 /* Not To Do List */,
 				F0D1BB012BD126B0000BA516 /* Products */,
 			);
@@ -57,6 +61,7 @@
 		F0D1BB022BD126B0000BA516 /* Not To Do List */ = {
 			isa = PBXGroup;
 			children = (
+				F0D1BB1E2BD93AFE000BA516 /* Not-To-Do-List-Info.plist */,
 				F0D1BB032BD126B0000BA516 /* Not_To_Do_ListApp.swift */,
 				F0D1BB142BD12706000BA516 /* Views */,
 				F0D1BB112BD126D8000BA516 /* Models */,
@@ -159,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0D1BB0B2BD126B2000BA516 /* Preview Assets.xcassets in Resources */,
+				F0D1BB222BD99BF3000BA516 /* Launch Screen.storyboard in Resources */,
 				F0D1BB082BD126B2000BA516 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,19 +311,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Not To Do List/Preview Content\"";
 				DEVELOPMENT_TEAM = SMTY27WFRR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Not to do list";
+				INFOPLIST_FILE = "Not-To-Do-List-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Don't do it";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -338,19 +346,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Not To Do List/Preview Content\"";
 				DEVELOPMENT_TEAM = SMTY27WFRR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Not to do list";
+				INFOPLIST_FILE = "Not-To-Do-List-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Don't do it";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
