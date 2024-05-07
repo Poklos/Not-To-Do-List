@@ -27,7 +27,6 @@ class ListViewModel: ObservableObject {
            let savedItems = try? JSONDecoder().decode([ItemModel].self, from: data) {
             self.items = savedItems
         } else {
-            // Inicjalizuje elementy demo, jeśli nie znaleziono zapisanych danych
             initializeDemoItems()
         }
     }
@@ -66,7 +65,7 @@ class ListViewModel: ObservableObject {
     }
     
     func initializeDemoItems() {
-        if items.isEmpty { // Sprawdza czy lista elementów jest pusta
+        if items.isEmpty {
             let demoItems = [
                 ItemModel(title: "Just type the things you don't want to do today... or ever.", isCompleted: false),
                 ItemModel(title: "Then mark them when they are not done", isCompleted: true)

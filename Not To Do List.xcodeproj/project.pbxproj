@@ -15,6 +15,7 @@
 		F0D1BB182BD12742000BA516 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1BB172BD12742000BA516 /* ListRowView.swift */; };
 		F0D1BB1B2BD12895000BA516 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1BB1A2BD12895000BA516 /* ListViewModel.swift */; };
 		F0D1BB222BD99BF3000BA516 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0D1BB212BD99BF3000BA516 /* Launch Screen.storyboard */; };
+		F0D1BB242BDBE766000BA516 /* EmptyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1BB232BDBE766000BA516 /* EmptyListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F0D1BB1A2BD12895000BA516 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		F0D1BB1E2BD93AFE000BA516 /* Not-To-Do-List-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Not-To-Do-List-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F0D1BB212BD99BF3000BA516 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		F0D1BB232BDBE766000BA516 /* EmptyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				F0D1BB152BD12723000BA516 /* ListView.swift */,
+				F0D1BB232BDBE766000BA516 /* EmptyListView.swift */,
 				F0D1BB172BD12742000BA516 /* ListRowView.swift */,
 			);
 			path = Views;
@@ -178,6 +181,7 @@
 			files = (
 				F0D1BB1B2BD12895000BA516 /* ListViewModel.swift in Sources */,
 				F0D1BB162BD12723000BA516 /* ListView.swift in Sources */,
+				F0D1BB242BDBE766000BA516 /* EmptyListView.swift in Sources */,
 				F0D1BB132BD126F3000BA516 /* ItemModel.swift in Sources */,
 				F0D1BB182BD12742000BA516 /* ListRowView.swift in Sources */,
 				F0D1BB042BD126B0000BA516 /* Not_To_Do_ListApp.swift in Sources */,

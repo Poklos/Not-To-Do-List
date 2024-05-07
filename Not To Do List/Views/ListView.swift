@@ -30,24 +30,29 @@ struct ListView: View {
                 
                 VStack {
                     Spacer(minLength: 20)
-                    List {
-                        ForEach(listViewModel.items) { item in
-                            ListRowView(item: item)
-                                .onTapGesture {
-                                    withAnimation(.linear){
-                                        listViewModel.updateItem(item: item)
-                                    }
+                    
+                        if listViewModel.items.isEmpty {
+                            EmptyListView()
+                        } else {
+                            List {
+                                ForEach(listViewModel.items) { item in
+                                    ListRowView(item: item)
+                                        .onTapGesture {
+                                            withAnimation(.linear){
+                                                listViewModel.updateItem(item: item)
+                                            }
+                                        }
+                                        .listRowBackground(Color.clear)
+                                    
                                 }
-                                .listRowBackground(Color.clear)
-                            
+                                .onDelete(perform: listViewModel.deleteItem)
+                                .onMove(perform: listViewModel.moveItem)
+                                
+                                
+                            }
+                            .listStyle(.plain)
                         }
-                        .onDelete(perform: listViewModel.deleteItem)
-                        .onMove(perform: listViewModel.moveItem)
-                        
-                        
-                    }
-                    .listStyle(.plain)
-        
+                    Spacer()
                     
                     VStack {
                         TextField("", text: $listViewModel.newItem)
@@ -68,12 +73,12 @@ struct ListView: View {
                         Text("Add")
                             .foregroundColor(.black)
                             .padding()
-                            .frame(maxWidth: .infinity) // Rozciągnięcie przycisku na całą szerokość
-                            .background(listViewModel.newItem.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? Color.gray : Color.yellow) // Niebieskie tło dla przycisku
-                            .cornerRadius(50) // Zaokrąglenie rogów
+                            .frame(maxWidth: .infinity)
+                            .background(listViewModel.newItem.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? Color.gray : Color.yellow)
+                            .cornerRadius(50)
                     }
                     .disabled(listViewModel.newItem.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
-                    .padding(.horizontal) // Dodanie paddingu poziomego dla przycisku
+                    .padding(.horizontal)
                     .padding(.bottom)
                 }
                 .navigationTitle("Don't do it list")

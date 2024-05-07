@@ -16,14 +16,13 @@ struct ListRowView: View {
             Image(systemName: item.isCompleted ? "circle.slash.fill": "circle.slash")
                 .imageScale(.large)
                 .padding(.top, 3)
-            VStack(alignment: .leading) { // Użycie VStack dla tekstu z wyrównaniem do lewej
+            VStack(alignment: .leading) {
                         Text(item.title)
                             .font(.title)
-                           // .lineLimit(nil) // Usunięcie limitu linii, pozwala tekstowi łamać się na więcej linii
-                           // .fixedSize(horizontal: false, vertical: true) // Pozwala VStack na rozciągnięcie w pionie
+                           
                     }
 
-                    Spacer() // Dodanie Spacera, aby tekst i ikona były wyrównane do lewej
+                    Spacer() 
         }
       
        
