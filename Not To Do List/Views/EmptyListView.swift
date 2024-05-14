@@ -8,20 +8,22 @@
 import SwiftUI
 
 struct EmptyListView: View {
+    
     @State var animate = false
+    
     var body: some View {
         VStack{
             Text("Nothing here. You can do everything.")
                 .padding()
-            Button {
-                //akcja
-            } label: {
-                Image(systemName: "plus.circle")
-                    .font(.title)
-                    .foregroundStyle(Color.yellow)
-                    .scaledToFit()
-                    .scaledToFill()
-            }
+//            Button {
+//                //akcja
+//            } label: {
+//                Image(systemName: "plus.circle")
+//                    .font(.title)
+//                    .foregroundStyle(Color.yellow)
+//                    .scaledToFit()
+//                    .scaledToFill()
+//            }
         }
         .onAppear {
             addAnimation()

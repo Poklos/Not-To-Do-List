@@ -30,7 +30,7 @@ class ListViewModel: ObservableObject {
             initializeDemoItems()
         }
     }
-
+    
     
     func deleteItem(indexSet: IndexSet) {
         items.remove(atOffsets: indexSet)
@@ -40,15 +40,15 @@ class ListViewModel: ObservableObject {
         items.move(fromOffsets: from, toOffset: to)
     }
     
-
+    
     func addItem() {
-            let trimmedNewItem = newItem.trimmingCharacters(in: .whitespacesAndNewlines)
-            if !trimmedNewItem.isEmpty {
-                let newItemModel = ItemModel(title: trimmedNewItem, isCompleted: false)
-                items.append(newItemModel)
-                newItem = ""
-            }
+        let trimmedNewItem = newItem.trimmingCharacters(in: .whitespacesAndNewlines)
+        if !trimmedNewItem.isEmpty {
+            let newItemModel = ItemModel(title: trimmedNewItem, isCompleted: false)
+            items.append(newItemModel)
+            newItem = ""
         }
+    }
     
     func updateItem(item: ItemModel) {
         
@@ -73,10 +73,6 @@ class ListViewModel: ObservableObject {
             items.append(contentsOf: demoItems)
         }
     }
-    
-    
-
-    
 }
 
 extension ListViewModel {

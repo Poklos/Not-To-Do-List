@@ -12,6 +12,7 @@ struct ListRowView: View {
     let item: ItemModel
     
     var body: some View {
+        
         HStack(alignment: .top) {
             Image(systemName: item.isCompleted ? "circle.slash.fill": "circle.slash")
                 .imageScale(.large)
