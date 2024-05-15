@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-let customYellowUIColor = UIColor(red: 1.0, green: 0.8, blue: 0.0, alpha: 1.0) // Przykładowe wartości RGB dla żółtego
+let customYellowUIColor = UIColor(red: 1.0, green: 0.8, blue: 0.0, alpha: 1.0)
 let customYellowSwiftUIColor = Color(customYellowUIColor)
 let appIcon = Image("SharePreviewIcon")
 
@@ -18,7 +18,7 @@ struct ListView: View {
     
     
     init() {
-           // Ustawienie niestandardowego koloru żółtego dla tekstu paska nawigacyjnego
+           
            UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: customYellowUIColor]
            UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: customYellowUIColor]
        }
@@ -58,7 +58,8 @@ struct ListView: View {
                         TextField("", text: $listViewModel.newItem)
                             //.focused($fieldIsFocused)
                             .placeholder(when: listViewModel.newItem.isEmpty) {
-                                   Text("Type here...").foregroundColor(.gray)
+                                   Text("Type here...")
+                                    .foregroundColor(.gray)
                            }
                             .padding(.bottom)
                         .font(.title)
