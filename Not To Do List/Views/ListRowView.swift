@@ -20,6 +20,8 @@ struct ListRowView: View {
             VStack(alignment: .leading) {
                         Text(item.title)
                             .font(.title)
+                            .strikethrough(item.isCompleted, color: .gray)
+                            .foregroundStyle(item.isCompleted ? .gray : .white)
                            
                     }
 

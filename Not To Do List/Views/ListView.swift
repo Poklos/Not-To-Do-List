@@ -18,10 +18,24 @@ struct ListView: View {
     
     
     init() {
-           
-           UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: customYellowUIColor]
-           UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: customYellowUIColor]
-       }
+            let appearance = UINavigationBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            appearance.backgroundColor = UIColor.clear
+            appearance.titleTextAttributes = [
+                .foregroundColor: customYellowUIColor,
+                .font: UIFont.systemFont(ofSize: 25, weight: .bold),
+                .baselineOffset: -5
+                
+            ]
+            appearance.largeTitleTextAttributes = [
+                .foregroundColor: customYellowUIColor
+            ]
+            
+            UINavigationBar.appearance().standardAppearance = appearance
+            UINavigationBar.appearance().compactAppearance = appearance
+            UINavigationBar.appearance().scrollEdgeAppearance = appearance
+            UINavigationBar.appearance().tintColor = customYellowUIColor
+        }
     
     var body: some View {
         NavigationStack {
@@ -83,6 +97,7 @@ struct ListView: View {
                     .padding(.bottom)
                 }
                 .navigationTitle("Don't do it list")
+                .navigationBarTitleDisplayMode(.inline)
                 
 
             }
