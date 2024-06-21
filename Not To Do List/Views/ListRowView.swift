@@ -14,9 +14,9 @@ struct ListRowView: View {
     var body: some View {
         
         HStack(alignment: .top) {
-            Image(systemName: item.isCompleted ? "circle.slash.fill": "circle.slash")
-                .imageScale(.large)
-                .padding(.top, 3)
+//            Image(systemName: item.isCompleted ? "circle.slash.fill": "circle.slash")
+//                .imageScale(.large)
+//                .padding(.top, 3)
             VStack(alignment: .leading) {
                         Text(item.title)
                             .font(.title)
