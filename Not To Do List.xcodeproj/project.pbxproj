@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F0B008FF2C2741AE00A40ECA /* ItemsContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F0B008FD2C2741AE00A40ECA /* ItemsContainer.xcdatamodeld */; };
+		F0B009022C29565500A40ECA /* ListDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B009012C29565500A40ECA /* ListDataService.swift */; };
 		F0D1BB042BD126B0000BA516 /* Not_To_Do_ListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1BB032BD126B0000BA516 /* Not_To_Do_ListApp.swift */; };
 		F0D1BB082BD126B2000BA516 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0D1BB072BD126B2000BA516 /* Assets.xcassets */; };
 		F0D1BB0B2BD126B2000BA516 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0D1BB0A2BD126B2000BA516 /* Preview Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F0B008FE2C2741AE00A40ECA /* ItemsContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ItemsContainer.xcdatamodel; sourceTree = "<group>"; };
+		F0B009012C29565500A40ECA /* ListDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataService.swift; sourceTree = "<group>"; };
 		F0D1BB002BD126B0000BA516 /* Not To Do List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Not To Do List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D1BB032BD126B0000BA516 /* Not_To_Do_ListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Not_To_Do_ListApp.swift; sourceTree = "<group>"; };
 		F0D1BB072BD126B2000BA516 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,9 +47,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F0B009002C29562E00A40ECA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F0B009012C29565500A40ECA /* ListDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		F0D1BAF72BD126B0000BA516 = {
 			isa = PBXGroup;
 			children = (
+				F0B008FD2C2741AE00A40ECA /* ItemsContainer.xcdatamodeld */,
 				F0D1BB212BD99BF3000BA516 /* Launch Screen.storyboard */,
 				F0D1BB022BD126B0000BA516 /* Not To Do List */,
 				F0D1BB012BD126B0000BA516 /* Products */,
@@ -67,6 +80,7 @@
 				F0D1BB032BD126B0000BA516 /* Not_To_Do_ListApp.swift */,
 				F0D1BB142BD12706000BA516 /* Views */,
 				F0D1BB112BD126D8000BA516 /* Models */,
+				F0B009002C29562E00A40ECA /* Services */,
 				F0D1BB192BD12817000BA516 /* ViewModels */,
 				F0D1BB072BD126B2000BA516 /* Assets.xcassets */,
 				F0D1BB092BD126B2000BA516 /* Preview Content */,
@@ -183,8 +197,10 @@
 				F0D1BB162BD12723000BA516 /* ListView.swift in Sources */,
 				F0D1BB242BDBE766000BA516 /* EmptyListView.swift in Sources */,
 				F0D1BB132BD126F3000BA516 /* ItemModel.swift in Sources */,
+				F0B008FF2C2741AE00A40ECA /* ItemsContainer.xcdatamodeld in Sources */,
 				F0D1BB182BD12742000BA516 /* ListRowView.swift in Sources */,
 				F0D1BB042BD126B0000BA516 /* Not_To_Do_ListApp.swift in Sources */,
+				F0B009022C29565500A40ECA /* ListDataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +422,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F0B008FD2C2741AE00A40ECA /* ItemsContainer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F0B008FE2C2741AE00A40ECA /* ItemsContainer.xcdatamodel */,
+			);
+			currentVersion = F0B008FE2C2741AE00A40ECA /* ItemsContainer.xcdatamodel */;
+			name = ItemsContainer.xcdatamodeld;
+			path = "/Users/filippoklosiewicz/Documents/Work/iOS Dev/Not To Do List/ItemsContainer.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F0D1BAF82BD126B0000BA516 /* Project object */;
 }

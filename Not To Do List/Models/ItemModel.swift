@@ -8,14 +8,16 @@
 import Foundation
 
 struct ItemModel:Identifiable, Codable {
-    let id: String
+    let id: UUID
     let title: String
     let isCompleted: Bool
+  
     
-    init(id: String = UUID().uuidString, title: String, isCompleted: Bool) {
+    init(id: UUID = UUID(), title: String, isCompleted: Bool) {
         self.id = id
         self.title = title
         self.isCompleted = isCompleted
+    
     }
     
     func updateCopletion() -> ItemModel {
